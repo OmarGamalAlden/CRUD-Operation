@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+
+    <div class="w-75 m-auto">
+
+        <label class="mb-1" for="productName">Product Name</label>
+        <input id="productName" class="form-control mb-4" type="text" placeholder="Product Name"/>
+
+        <label class="mb-1" for="productPrice">Product Price</label>
+        <input id="productPrice" class="form-control mb-4" type="number" placeholder="Product Price"/>
+
+        <label class="mb-1" for="productCategoray">Product Categoray</label>
+        <input id="productCategoray" class="form-control mb-4" type="text" placeholder="Product Categoray"/>
+
+        <label class="mb-1" for="productDescription">Product Description</label>
+        <textarea class="form-control" id="productDescription" cols="20" rows="3" placeholder="Product Description"></textarea>
+
+        <button id="bttn" class="btn btn-info form-control mt-2" onclick="addProduct()">ADD</button>
+
+        <input onkeyup="search(this.value)" type="text" placeholder="Search Bar" class="form-control my-4"/>
+
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>categoray</th>
+                    <th>Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+        
+    </div>
+
+     
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
