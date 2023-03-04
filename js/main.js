@@ -119,4 +119,5 @@ function search(term) {
 </tr>`
      } 
   }
+  document.getElementById('tbody').innerHTML= cartoona;
 }
